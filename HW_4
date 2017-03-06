@@ -1,0 +1,57 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Customer																 //Customer structures name
+{
+		int					ID;
+		string			Customer_Name;
+		string			Address;
+		Accounts[]	Account_Number; 
+};																						//can put <object names> right before ;
+Customer Joel = {460116,"Robert Joel Martinez", "9744 Valley Crest, San Antonio TX", 001} ;//joel right after Customer...this is the object name
+Joel.Customer_Name = "Robert Joel Martinez";
+
+
+
+struct Account																 //Customer structures name
+{
+		int					ID;
+		string			Name;
+		string			Date_Opened;
+		Transactions[] 	Transaction;
+};																						
+Account Joel = {460116,"Checking","The current date and time is : " cout << date << endl;, cout << Transactions << endl; } ;
+Account Joel = {460116,"Savings","The current date and time is : " cout << date << endl;, cout << Transactions << endl; } ;
+
+struct Transaction																 
+{
+		int											ID;
+		Enum(Credit, Debit)			Type;
+		string								TimeStamp;
+		float									Amount; 
+};																						//can put <object names> right before ;
+Transaction Joel = {460116, Credit, "The current date and time is :",} ;//joel right after Customer...this is the object name
+
+
+
+//RETRIEVING VALUES FROM STRUCTS
+<variable object name> = <structure object name>.<member name>;
+
+
+int balance ()
+{ return ( current + deposit)
+}
+
+
+
+int main()
+{
+	
+	
+	
+	rectangle rect;	//class instantation as a named OBJECT "rect"
+	rect.set_values(3, 4);
+	cout << "area: " << rect.area();
+	return 0;
+}
