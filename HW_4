@@ -7,7 +7,7 @@ struct Customer																 //Customer structures name
 		int					ID;
 		string			Customer_Name;
 		string			Address;
-		Accounts[]	Account_Number; 
+		Accounts[100]	Account_Number; 
 };																						//can put <object names> right before ;
 Customer Joel = {460116,"Robert Joel Martinez", "9744 Valley Crest, San Antonio TX", 001} ;//joel right after Customer...this is the object name
 Joel.Customer_Name = "Robert Joel Martinez";
@@ -36,22 +36,36 @@ Transaction Joel = {460116, Credit, "The current date and time is :",} ;//joel r
 
 
 //RETRIEVING VALUES FROM STRUCTS
-<variable object name> = <structure object name>.<member name>;
-
-
-int balance ()
-{ return ( current + deposit)
-}
+/*<variable object name> = <structure object name>.<member name>;
+*/
 
 
 
 int main()
 {
-	
-	
-	
-	rectangle rect;	//class instantation as a named OBJECT "rect"
-	rect.set_values(3, 4);
-	cout << "area: " << rect.area();
+customer.Joel;//enter ID number
+//select which account to preform transaction
+//show balance on account
+//select what kind of transaction
+// enter amount	
+//preform transaction
+//show new balance
+//return to ID select	
+
+cout>>"Entered: " <<Joel.ID<<endl;
+cin>>Joel.ID;
+cin>>Account.name;
+cout>>balance>>endl;
+cin<<Transaction.Enum(Credit, Debit);
+cin<<Transaction.Amount;
+balance();
+cout>>balance>>endl;
+
 	return 0;
+}
+
+int balance ()
+{
+	int current;
+	 return ( current + Ammount)
 }
