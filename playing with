@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+using namespace std;
+struct structure_name
+{
+		member 1 data class 	member 1 name;
+		member 2 data class	member 2 name;
+}	<object names>; // end struct
+
+struct 	student //Student structures name
+{
+		string	Name;
+		int	StudentID;
+		float	GPA;
+		int	Yearenrolled;
+		bool	Graduated; 
+};
+student Joel = {"Joel", 460116,  2.0, 2014, false} ;//joel right after student...this is the object name
+
+//RETRIEVING VALUES FROM STRUCTS
+<variable object name> = <structure object name>.<member name>;
