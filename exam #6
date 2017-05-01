@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	
+	int size=6;
+	int array1[size];
+	
+	for (int i=0; i <size; i++)
+	{
+	array1[i]=i; 	
+cout<< array1[i]<<endl;
+		}
+for (int s=0; s<size/2; s++)
+{
+	array1[s]=array1[(size-1)-s];
+	cout<<array1[s];
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	return 0;
+	}
